@@ -1,27 +1,43 @@
 # UserGroup
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
+UserGroup is responsive pseudo web application written in an Angular 11
+which allows one to create a User group by selecting the members for the group from a list of users.
 
-## Development server
+## Features:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Use of Web API to fetch list of user details.
+2. Display Users as Cards (Images with name). 
+3. Entry fields to accept name and description. 
+4. Toggle the user selection on click of the card 
+5. A feature to Sort users by Name - ascending & descending.
+6. Option to upload an image file as group logo 
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Software to be installed:
 
-## Build
+Node js 
+version: 14.15.1
+https://nodejs.org/en/
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Angular CLI 
+version: 11.0.3
+npm install -g @angular/cli
 
-## Running unit tests
+Microsoft Visual Code (or any other alternative):
+https://code.visualstudio.com/
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Please follow the following steps to run the appliation:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+1. To install Node modules:
+   npm install
 
-## Further help
+2. To run the application: 
+   ng serve --open
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. Open the browser:
+   http://localhost:4200
+
+
+
+
