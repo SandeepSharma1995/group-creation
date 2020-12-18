@@ -1,0 +1,22 @@
+<!-- Toolbar -->
+<mat-toolbar color="primary">
+  <span> User Group Creation Page</span>
+</mat-toolbar>
+
+<section class="content-strip">
+  <div class="flex flex-center">
+    <h3>Create a User Group by selecting the members for the group from a list of users</h3>
+  </div>
+  <div class="flex flex-center">
+    <mat-card class="card cursor-pointer" routerLink="/create-group">
+      <div class="flex">
+        <mat-icon class="text-middle margin-s">group_add</mat-icon>
+        <span class="text-middle margin-s"> Create Group</span>
+        <span class="spacer"></span>
+        <mat-icon class="text-middle margin-s">navigate_next</mat-icon>
+      </div>
+    </mat-card>
+
+  </div>
+</section>
+<router-outlet></router-outlet>

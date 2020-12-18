@@ -1,0 +1,16 @@
+<section class="content-strip" *ngIf="data">
+
+    <h2>You have updated the group successfully.</h2>
+    <div class="margin-s">
+        <h3>Group Details</h3>
+        <p>
+            Group Name: {{data.name}}
+        </p>
+        <p>
+            Group Description: {{data.description}}</p>
+        <p>
+            User(s) Added:
+            <span *ngFor="let user of data.users" class="margin-left-s">{{user.name}}</span>
+        </p>
+    </div>
+</section>

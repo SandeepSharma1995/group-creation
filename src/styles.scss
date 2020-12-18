@@ -1,0 +1,87 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+//text-modifier
+.text-middle {
+  vertical-align: middle !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-bold {
+  font-weight: bold !important;
+}
+// flex properties
+.flex {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+}
+.flex-between {
+  justify-content: space-between;
+}
+.flex-around {
+  justify-content: space-around;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+// margin properties
+.margin-s {
+  margin: 8px !important;
+}
+.margin-m {
+  margin: 12px !important;
+}
+.margin-l {
+  margin: 16px !important;
+}
+.margin-left-s {
+  margin-left: 8px !important;
+}
+.margin-left-m {
+  margin-left: 12px !important;
+}
+.margin-left-l {
+  margin-left: 16px !important;
+}
+.margin-right-s {
+  margin-right: 8px !important;
+}
+.margin-right-m {
+  margin-right: 12px !important;
+}
+.margin-right-l {
+  margin-right: 16px !important;
+}
+
+// padding properties
+.padding-s {
+  padding: 8px !important;
+}
+.padding-m {
+  padding: 12px !important;
+}
+.padding-l {
+  padding: 16px !important;
+}
+
+.content-strip {
+  padding: 16px 8px;
+}

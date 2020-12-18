@@ -1,0 +1,23 @@
+.card-container{
+  width:200px;  
+  // position: relative;
+}
+
+.example-card {
+    height:100%;
+    width:100%;
+    margin: 8px 16px;
+    // cursor: pointer;
+    position: relative;
+  }
+
+  .checkbox {
+    zoom: 1.5;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+  .text-user {
+    font-weight: 500;
+    font-size: 16px;
+}

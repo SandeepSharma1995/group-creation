@@ -1,0 +1,15 @@
+Software to be installed:
+
+Node js 
+version: 14.15.1
+https://nodejs.org/en/
+
+Angular CLI 
+version: 11.0.3
+npm install -g @angular/cli
+
+Microsoft Visual Code (or any other alternative):
+https://code.visualstudio.com/
+
+
+

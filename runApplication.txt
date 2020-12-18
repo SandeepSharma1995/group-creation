@@ -1,0 +1,10 @@
+Please follow the following steps to run the appliation:
+
+1. To install Node modules:
+   npm install
+
+2. To run the application: 
+   ng serve --open
+
+3. Open the browser:
+   http://localhost:4200

@@ -1,0 +1,61 @@
+<section class="content-strip">
+    <div class="flex flex-center">
+        <div class="margin-s padding-s">
+            <img id="output" width="200" src="assets/images/logo_icon.png" />
+            <input type="file" name="image" id="file" style="display: none;" (change)="loadFile($event)">
+            <p class="text-center">
+                <label for="file" style="cursor: pointer;">
+                    <span>
+                        <mat-icon color="primary" class="text-middle margin-right-s"> insert_photo</mat-icon>
+                        Upload Group Logo
+                    </span>
+                </label>
+            </p>
+        </div>
+        <form class="example-form">
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Group Name</mat-label>
+                <input matInput placeholder="Provide unique name to your group" name="groupName"
+                    [(ngModel)]="groupName">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Group Description</mat-label>
+                <textarea matInput placeholder="Provide small description for the group" name="groupDescription"
+                    [(ngModel)]="groupDescription"></textarea>
+            </mat-form-field>
+        </form>
+    </div>
+    <div class="text-center">
+        <button mat-flat-button class="margin-s" (click)="reset()">Remove</button>
+        <button mat-raised-button color="primary" class="margin-s" (click)="openBottomSheet()">Update</button>
+        <span *ngIf="error" class="margin-left-s">
+            <mat-icon color="warn" class="text-middle">error</mat-icon>
+            Please provide all the fields.
+        </span>
+    </div>
+    <div class="flex flex-row-reverse margin-right-l">
+        <button mat-button [matMenuTriggerFor]="menu">
+            Sort Users by Name
+            <mat-icon color="primary" class="text-middle">sort</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="sortUserConfig(true)">Ascending</button>
+            <button mat-menu-item (click)="sortUserConfig(false)">Descending</button>
+        </mat-menu>
+    </div>
+    <div class="card-section margin-m">
+        <ng-container *ngFor="let user of userConfig">
+            <app-user-card [content]="user"></app-user-card>
+        </ng-container>
+
+    </div>
+    <div class="text-center">
+        <button mat-flat-button class="margin-s" (click)="reset()">Remove</button>
+        <button mat-raised-button color="primary" class="margin-s" (click)="openBottomSheet()">Update</button>
+        <span *ngIf="error" class="margin-left-s">
+            <mat-icon color="warn" class="text-middle">error</mat-icon>
+            Please provide all the fields.
+        </span>
+    </div>
+</section>

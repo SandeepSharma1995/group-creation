@@ -1,0 +1,12 @@
+<div class="card-container">
+    <mat-card class="example-card">
+
+        <img mat-card-image src="{{content.Image}}" width="200px" height="200px">
+        <mat-checkbox color="primary" class="checkbox" (click)="setInParent()"></mat-checkbox>
+        <mat-card-content>
+            <p class="text-user">
+                {{content.name}}
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>
